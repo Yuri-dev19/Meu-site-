@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #0a0a0f 0%, #10121e 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.info {
+  text-align: center;
+  color: #9aa0b4;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+h2 {
+  color: #ffffff;
+  border-left: 5px solid #2dd4bf;
+  padding-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+.dados {
+  list-style: none;
+  padding: 0;
+}
+
+.dados li {
+  background-color: #1b1e2e;
+  border: 1px solid #2a2e42;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.description-text {
+  color: #d8dae2;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.galeria .slot {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  color: #000000;
+  font-size: 13px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid #2dd4bf;
+}
+
+.galeria .slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsividade das telas */
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .galeria .slot {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.linkedin-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background-color: #0077B5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 1000;
+}
+
+.linkedin-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 600px) {
+  .linkedin-float {
+    width: 48px;
+    height: 48px;
+    bottom: 100px;
+    right: 16px;
+  }
+}
