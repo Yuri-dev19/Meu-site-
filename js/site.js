@@ -2,10 +2,13 @@ const dev = {
   nome: "Yuri Machado",
   cidade: "Magé, RJ",
   foco: ["Front-end", "Back-end"],
-  tecnologias: ["HTML", "CSS", "JavaScript"]
+  tecnologias: ["HTML", "CSS", "JavaScript"],
 };
 
-console.log("%cOlá! Bem-vindo ao Stack.dev 👋!", "color: blue; font-size: 20px;");
+console.log(
+  "%cOlá! Bem-vindo ao Stack.dev 👋!",
+  "color: blue; font-size: 20px;",
+);
 
 console.log("Criado por " + dev.nome + " - " + dev.cidade);
 

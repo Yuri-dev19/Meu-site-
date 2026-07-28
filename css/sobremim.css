@@ -6,7 +6,7 @@
 
 body {
   background: linear-gradient(180deg, #0a0a0f 0%, #10121e 100%);
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   color: #333333;
 }
 
@@ -107,13 +107,15 @@ p {
   right: 24px;
   width: 56px;
   height: 56px;
-  background-color: #0077B5;
+  background-color: #0077b5;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   z-index: 1000;
 }
 
@@ -136,7 +138,7 @@ p {
   color: #f1f1f1;
   text-align: center;
   padding: 24px 16px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   font-size: 14px;
   border-top: 1px solid #33334d;
 }
@@ -152,13 +154,12 @@ p {
   opacity: 0.8;
 }
 
-
 .contact-info {
   background-color: #1a1a2e;
   color: #f1f1f1;
   padding: 32px 16px;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .contact-info p {
@@ -179,7 +180,14 @@ p {
   font-weight: 600;
   font-size: 14px;
   padding: 10px 24px;
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
   border-radius: 20px;
   transition: opacity 0.3s ease;
 }
