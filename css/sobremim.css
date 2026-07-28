@@ -130,3 +130,60 @@ p {
     right: 16px;
   }
 }
+
+.footer {
+  background-color: #1a1a2e;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 24px 16px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  border-top: 1px solid #33334d;
+}
+
+.footer strong {
+  color: #6c63ff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.footer p {
+  margin: 4px 0;
+  opacity: 0.8;
+}
+
+
+.contact-info {
+  background-color: #1a1a2e;
+  color: #f1f1f1;
+  padding: 32px 16px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 24px;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  border-radius: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.social-links a:hover {
+  opacity: 0.85;
+}
