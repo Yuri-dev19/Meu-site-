@@ -38,6 +38,7 @@ h2 {
   margin-bottom: 12px;
 }
 
+/* --- SEÇÃO DADOS --- */
 .dados {
   list-style: none;
   padding: 0;
@@ -52,6 +53,36 @@ h2 {
   border-radius: 4px;
 }
 
+/* --- SEÇÃO FOCO/ATUAÇÃO --- */
+#foco {
+  color: #d8dae2;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+/* --- SEÇÃO TECNOLOGIAS (Estilizado como Badges modernos) --- */
+#tecnologias {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#tecnologias li {
+  background-color: #1b1e2e;
+  color: #2dd4bf;
+  border: 1px solid #2dd4bf33;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* --- SOBRE MIM --- */
 .description-text {
   color: #d8dae2;
 }
@@ -60,6 +91,7 @@ p {
   line-height: 1.7;
 }
 
+/* --- FOTO / GALERIA --- */
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -89,18 +121,7 @@ p {
   object-fit: cover;
 }
 
-/* Responsividade das telas */
-@media (max-width: 600px) {
-  .container {
-    padding: 30px 20px;
-  }
-
-  .galeria .slot {
-    width: 150px;
-    height: 150px;
-  }
-}
-
+/* --- BOTÃO FLUTUANTE LINKEDIN --- */
 .linkedin-float {
   position: fixed;
   bottom: 24px;
@@ -124,42 +145,14 @@ p {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
 }
 
-@media (max-width: 600px) {
-  .linkedin-float {
-    width: 48px;
-    height: 48px;
-    bottom: 100px;
-    right: 16px;
-  }
-}
-
-.footer {
-  background-color: #1a1a2e;
-  color: #f1f1f1;
-  text-align: center;
-  padding: 24px 16px;
-  font-family: "Segoe UI", sans-serif;
-  font-size: 14px;
-  border-top: 1px solid #33334d;
-}
-
-.footer strong {
-  color: #6c63ff;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-}
-
-.footer p {
-  margin: 4px 0;
-  opacity: 0.8;
-}
-
+/* --- SEÇÃO DE CONTATO --- */
 .contact-info {
   background-color: #1a1a2e;
   color: #f1f1f1;
   padding: 32px 16px;
   text-align: center;
   font-family: "Segoe UI", sans-serif;
+  border-top: 1px solid #2a2e42;
 }
 
 .contact-info p {
@@ -194,4 +187,45 @@ p {
 
 .social-links a:hover {
   opacity: 0.85;
+}
+
+/* --- RODAPÉ --- */
+.footer {
+  background-color: #1a1a2e;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 24px 16px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  border-top: 1px solid #33334d;
+}
+
+.footer strong {
+  color: #6c63ff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.footer p {
+  margin: 4px 0;
+  opacity: 0.8;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .galeria .slot {
+    width: 150px;
+    height: 150px;
+  }
+
+  .linkedin-float {
+    width: 48px;
+    height: 48px;
+    bottom: 100px;
+    right: 16px;
+  }
 }
