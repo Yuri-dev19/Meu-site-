@@ -38,7 +38,6 @@ h2 {
   margin-bottom: 12px;
 }
 
-/* --- SEÇÃO DADOS --- */
 .dados {
   list-style: none;
   padding: 0;
@@ -53,7 +52,6 @@ h2 {
   border-radius: 4px;
 }
 
-/* --- SEÇÃO FOCO/ATUAÇÃO --- */
 #foco {
   color: #d8dae2;
   font-size: 16px;
@@ -61,7 +59,6 @@ h2 {
   padding-left: 5px;
 }
 
-/* --- SEÇÃO TECNOLOGIAS (Estilizado como Badges modernos) --- */
 #tecnologias {
   list-style: none;
   display: flex;
@@ -82,7 +79,6 @@ h2 {
   letter-spacing: 0.5px;
 }
 
-/* --- SOBRE MIM --- */
 .description-text {
   color: #d8dae2;
 }
@@ -91,7 +87,6 @@ p {
   line-height: 1.7;
 }
 
-/* --- FOTO / GALERIA --- */
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -121,7 +116,6 @@ p {
   object-fit: cover;
 }
 
-/* --- BOTÃO FLUTUANTE LINKEDIN --- */
 .linkedin-float {
   position: fixed;
   bottom: 24px;
@@ -145,7 +139,6 @@ p {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
 }
 
-/* --- SEÇÃO DE CONTATO --- */
 .contact-info {
   background-color: #1a1a2e;
   color: #f1f1f1;
@@ -189,7 +182,6 @@ p {
   opacity: 0.85;
 }
 
-/* --- RODAPÉ --- */
 .footer {
   background-color: #1a1a2e;
   color: #f1f1f1;
@@ -211,7 +203,6 @@ p {
   opacity: 0.8;
 }
 
-/* --- RESPONSIVIDADE --- */
 @media (max-width: 600px) {
   .container {
     padding: 30px 20px;

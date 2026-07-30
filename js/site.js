@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (nomeEl) nomeEl.textContent = dev.nome;
   if (cidadeEl) cidadeEl.textContent = dev.cidade;
-  if (idadeEl) idadeEl.textContent = dev.idade + " anos";
+  if (idadeEl) idadeEl.textContent = dev.idade + "anos";
 
 
   if (focoEl) {
