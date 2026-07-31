@@ -23,13 +23,6 @@ h1 {
   letter-spacing: 1px;
 }
 
-.info {
-  text-align: center;
-  color: #9aa0b4;
-  margin-bottom: 30px;
-  font-size: 14px;
-}
-
 h2 {
   color: #ffffff;
   border-left: 5px solid #2dd4bf;
@@ -106,8 +99,8 @@ p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 8px;
-  border: 2px solid #2dd4bf;
+  border-radius: 50%;
+  border: 2px solid rgba(45, 212, 191, 0.3);
 }
 
 .galeria .slot img {
@@ -116,28 +109,6 @@ p {
   object-fit: cover;
 }
 
-.linkedin-float {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 56px;
-  height: 56px;
-  background-color: #0077b5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-  z-index: 1000;
-}
-
-.linkedin-float:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
-}
 
 .contact-info {
   background-color: #1a1a2e;
@@ -157,15 +128,35 @@ p {
 .social-links {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 20px;
 }
 
 .social-links a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 10px 24px;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 28px;
+  border-radius: 999px;
+  transition:
+    opacity 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.social-links a:hover {
+  opacity: 0.95;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.social-links .instagram-btn {
   background: linear-gradient(
     45deg,
     #f09433,
@@ -174,12 +165,17 @@ p {
     #cc2366,
     #bc1888
   );
-  border-radius: 20px;
-  transition: opacity 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-.social-links a:hover {
-  opacity: 0.85;
+.social-links .github-btn {
+  background: linear-gradient(135deg, #24292f, #444d56);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.social-links .linkedin-btn {
+  background: linear-gradient(135deg, #0a66c2, #0077b5);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .footer {
@@ -203,6 +199,83 @@ p {
   opacity: 0.8;
 }
 
+.feedback-section {
+  margin-top: 30px;
+  padding: 24px;
+  background-color: #12172a;
+  border: 1px solid #2a2e42;
+  border-radius: 12px;
+}
+
+.feedback-intro {
+  color: #d8dae2;
+  margin-bottom: 16px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback-form label {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #2dd4bf33;
+  border-radius: 8px;
+  background-color: #1b1e2e;
+  color: #ffffff;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  color: #9aa0b4;
+}
+
+.feedback-form button {
+  align-self: flex-start;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #6c63ff, #2dd4bf);
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feedback-form button:hover {
+  opacity: 0.9;
+}
+
+.mensagem-feedback {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.lista-comentarios {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lista-comentarios li {
+  background-color: #1b1e2e;
+  color: #d8dae2;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border-left: 3px solid #2dd4bf;
+}
+
 @media (max-width: 600px) {
   .container {
     padding: 30px 20px;
@@ -213,10 +286,4 @@ p {
     height: 150px;
   }
 
-  .linkedin-float {
-    width: 48px;
-    height: 48px;
-    bottom: 100px;
-    right: 16px;
-  }
 }

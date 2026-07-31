@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stack.dev</title>
+    <title>Yuri Machado | Desenvolvedor Web & Montagem de PCs 😃​</title>
     <link rel="stylesheet" href="./css/sobremim.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Stack.dev</h1>
+      <h1>Yuri Machado</h1>
 
       <h2>Dados</h2>
       <ul class="dados">
@@ -29,7 +29,8 @@
         vídeos e tutoriais até entender como as coisas funcionam por trás das
         telas. Hoje estou dando os primeiros passos como desenvolvedor,
         estudando o básico de HTML, CSS e JavaScript e praticando com exercícios
-        de curso. Meu objetivo é evoluir de forma consistente, sair da teoria
+        de curso. Também gosto bastante de montar PCs e acompanhar tudo sobre
+        hardware. Meu objetivo é evoluir de forma consistente, sair da teoria
         para projetos próprios e conquistar minha primeira oportunidade na área,
         seja como Front-end ou Back-end.
       </p>
@@ -39,40 +40,80 @@
           <img
             src="img/WhatsApp Image 2026-07-29 at 19.29.52.jpeg"
             alt="Foto de perfil de Yuri Machado"
+            loading="lazy"
           />
         </div>
       </div>
-    </div>
 
-    <a
-      href="https://www.linkedin.com/in/yuri-machado-b8b581402/?skipRedirect=true"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="linkedin-float"
-      aria-label="Meu LinkedIn"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        width="26"
-        height="26"
-        fill="#ffffff"
-      >
-        <path
-          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.56V9h3.554v11.452z"
-        />
-      </svg>
-    </a>
+      <section class="feedback-section" aria-labelledby="feedback-title">
+        <h2 id="feedback-title">Feedback</h2>
+        <p class="feedback-intro">
+          Gostou do site? Deixe uma mensagem e contribua com a minha evolução.
+        </p>
+
+        <form id="form-feedback" class="feedback-form">
+          <label for="feedback-nome">Seu nome</label>
+          <input
+            id="feedback-nome"
+            name="nome"
+            type="text"
+            placeholder="Digite seu nome"
+            required
+          />
+
+          <label for="feedback-comentario">Comentário</label>
+          <textarea
+            id="feedback-comentario"
+            name="comentario"
+            rows="4"
+            placeholder="Escreva seu feedback"
+            required
+          ></textarea>
+
+          <button id="btn-enviar" type="submit">Enviar feedback</button>
+        </form>
+
+        <p
+          id="mensagem-feedback"
+          class="mensagem-feedback"
+          aria-live="polite"
+        ></p>
+
+        <h3>Comentários recebidos</h3>
+        <ul id="lista-comentarios" class="lista-comentarios"></ul>
+      </section>
+    </div>
 
     <div class="contact-info">
       <p>📧 contato Stack.dev@gmail.com</p>
       <p>🛠️ suporte Stack.dev@gmail.com</p>
-      <p>📱 (21) 3456-7890</p>
+      <p>📱 (21) 99466-8859</p>
       <p>📍Centro, Magé/RJ</p>
       <div class="social-links">
-        <a href="https://www.instagram.com/yuri__rlk2/" target="_blank
-          >Instagram</a
+        <a
+          href="https://www.instagram.com/yuri__rlk2/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-btn instagram-btn"
         >
+          Instagram
+        </a>
+        <a
+          href="https://github.com/Yuri-dev19/Meu-site-"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-btn github-btn"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yuri-machado-b8b581402/?skipRedirect=true"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-btn linkedin-btn"
+        >
+          LinkedIn
+        </a>
       </div>
     </div>
 
