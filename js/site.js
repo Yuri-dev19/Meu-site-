@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const focoEl = document.getElementById("foco");
   const tecnologiasEl = document.getElementById("tecnologias");
 
-
   if (nomeEl) nomeEl.textContent = dev.nome;
   if (cidadeEl) cidadeEl.textContent = dev.cidade;
   if (idadeEl) idadeEl.textContent = dev.idade + "anos";
